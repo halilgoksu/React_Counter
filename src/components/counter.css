@@ -1,0 +1,95 @@
+
+
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background:linear-gradient(to right, #8360c3, #2ebf91);
+    color: white;
+
+   
+}
+.counter-container{
+    border: solid ;
+   display: grid;
+   grid-template-rows: 1fr 1fr 1fr;
+    height: 30rem;
+    width: 20rem;
+    align-items: center;
+    background-color: black;
+    border-radius: 5%;
+    
+}
+.count-title{
+    font-size: 3rem;
+}
+.count-number{
+    font-size: 8rem;
+    height: 8rem;
+    margin-bottom: 20%;
+}
+.buttons{
+   display: grid;
+   grid-template-columns:1fr 1fr 1fr;
+   justify-content: space-between;
+   width: 100%;
+   height: 100%;
+   
+
+}
+
+.increase-reduce-resset{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+
+}
+
+.increase-reduce{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+
+    
+}
+.resset-btn{
+    background-color: rgb(182, 38, 3);
+    color: white;
+    border-radius: 15%;
+    font-size: 2rem;
+    border: solid rgba(61, 221, 146, 0.384);
+    
+
+}
+
+.hide-btn{
+    display: inline;
+    color: red;
+    height: 100%;
+    width: 100%;
+    font-size: 2rem;
+    border-radius: 15%;
+
+
+}
+
+.change-btn{
+    display: inline;
+    color: blue;
+    height: 100%;
+    width: 100%;
+    border-radius: 15%;
+
+    font-size: 2rem;
+}
+
+.increase, .reduce {
+    width: 100%;
+    height: 100%;
+    border-radius: 15%;
+    font-size: 3rem;
+
+}
