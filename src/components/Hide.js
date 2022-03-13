@@ -1,12 +1,11 @@
 import React from "react";
 
-const Hide = ({ setCounter }) => {
-  const Hide = () => {
-   setCounter(false);
-  };
+const Hide = ({ setCounter,HideCounter }) => {
+
   return (
     <div>
-      <button className="hide-btn" onClick={Hide}>Hide</button>
+      <button className="hide-btn" onClick={HideCounter}
+      >Hide</button>
     </div>
   );
 };

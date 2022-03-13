@@ -6,11 +6,17 @@ import Hide from "./Hide";
 
 function CounterApp() {
   const [counter, setCounter] = useState(0);
-  const [title, setTitle] = useState("counter");
+  const [title, setTitle] = useState(false);
+  const [toggle,setToggle]= useState(false)
 
   const changetext = () => {
-    setTitle("Counter");
+    setTitle((prev)=>!prev);
   };
+
+  const HideCounter=()=>{
+    setToggle((prev)=> !prev);
+   
+  }
 
  
 
@@ -29,11 +35,11 @@ function CounterApp() {
   return (
     <container className="body">
       <div className="counter-container">
-        <h1 className="count-title">{title}</h1>
+        <h1 className={title ?"count-title": 'change-title'}>Counter</h1>
 
-        <h1 className="count-number">{counter}</h1>
+        <h1 className={toggle ? 'count-number' : 'hide'}>{counter}</h1>
         <div className="buttons">
-          <Hide setCounter={setCounter}></Hide>
+          <Hide HideCounter={HideCounter} setCounter={setCounter}></Hide>
           <Count
             counter={counter}
             increase={increase}

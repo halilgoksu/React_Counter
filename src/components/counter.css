@@ -25,10 +25,21 @@
 .count-title{
     font-size: 3rem;
 }
+.change-title{
+    font-size: 3rem;
+    background-color: rgba(255, 0, 0, 0.158);
+}
 .count-number{
     font-size: 8rem;
     height: 8rem;
     margin-bottom: 20%;
+}
+.hide{
+    margin-bottom: 20%;
+
+    font-size: 8rem;
+    height: 8rem;
+    opacity: 0;
 }
 .buttons{
    display: grid;
@@ -91,5 +102,13 @@
     height: 100%;
     border-radius: 15%;
     font-size: 3rem;
+
+}
+
+.active{
+    color: red;
+}
+.passive{
+    color: blue;
 
 }
